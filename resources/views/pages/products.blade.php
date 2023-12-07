@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,99 +9,93 @@
 </head>
 <body>
     <div class="title">
-    <h1>Trending Agricultural Farmers Product </h1>
+        <h1>Menya kndi Uhitamo Igihigwa Ushaka </h1>
     </div>
-    
+    <div class="searchdisplay">
+    <div class="filter-container">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+            <option value="all">All Categories</option>
+            <option value="ibikigwa">Ibikigwa by'ibinyamake</option>
+            <option value="diary">Diary and Other (Fish)</option>
+            <option value="fresh">Fresh Vegetables</option>
+            <option value="organic">Organic Products</option>
+        </select>
+    </div>
+    <form class="search-form">
+        <input type="text" placeholder="Search products...">
+        <button type="submit">
+            <img src="{{ asset('images/search-icon.png') }}" alt="Search">
+        </button>
+    </form>
+    </div>
+   
+
     <div class="product-container">
         <!-- Product 1 -->
-   <!-- Product 1 -->
-<div class="product-item">
-    <div class="product-image">
-    <img src="{{ asset('images/tomato2.jpg') }}" alt="Connection Failed" />
-    </div>
-    <div class="product-details">
-        <h2>Tomato</h2>
-        <p>But it is often grown as an annual crop even if biennial and perennial forms exist</p>
-        <small> Farmer:  Nkurunziza Jean Bosco</small>
-        <button class="chat-button" onclick="openChat('Farmer 1')">Chat with Farmer</button>
-    </div>
-</div>
+        <div class="product-item" data-category="ibikigwa">
+            <div class="product-image">
+                <img src="{{ asset('images/tomato2.jpg') }}" alt="Connection Failed" />
+            </div>
+            <div class="product-details">
+                <h2>Ibikigwa by'ibinyamake</h2>
+                <p>but it is often grown as an annual crop even if biennial and perennial forms exist</p>
+            </div>
+        </div>
 
-<div class="product-item">
-    <div class="product-image">
-    <img src="{{ asset('images/dairy.jpg') }}" alt="Connection Failed" />
-    </div>
-    <div class="product-details">
-        <h2>Dairy
-Products</h2>
-        <p>but it is often grown as an annual crop even if biennial and perennial forms exist</p>
-        <small> Farmer:  MURENZI Athanase</small>
-        <button class="chat-button" onclick="openChat('Farmer 1')">Chat with Farmer</button>
-    </div>
-</div>
-<div class="product-item">
-    <div class="product-image">
-    <img src="{{ asset('images/FRESH.webp') }}" alt="Connection Failed" />
-    </div>
-    <div class="product-details">
-        <h2>Fresh
-Vegetables</h2>
-        <p>but it is often grown as an annual crop even if biennial and perennial forms exist</p>
-        <small> Farmer:  MUHAWENIMANA Gertulde</small>
-        <button class="chat-button" onclick="openChat('Farmer 1')">Chat with Farmer</button>
-    </div>
-</div>
-<!-- Product 2 -->
-<div class="product-item">
-    <div class="product-image">
-        <img src="{{ asset('images/irishpatatooes.jpg') }}" alt="Product 2" />
-    </div>
-    <div class="product-details">
-        <h2>Organic
-Products</h2>
-        <p>irish Potatoes is a perennial herbaceous plant </p>
-        <small> Farmer:  MUKAMABANO  Dathive</small>
-        <button class="chat-button" onclick="openChat('Farmer 2')">Chat with Farmer</button>
-    </div>
-</div>
+        <div class="product-item" data-category="diary">
+            <div class="product-image">
+                <img src="{{ asset('images/dairy.jpg') }}" alt="Connection Failed" />
+            </div>
+            <div class="product-details">
+                <h2>Diary and Other (Fish)</h2>
+                <p>but it is often grown as an annual crop even if biennial and perennial forms exist</p>
+            </div>
+        </div>
 
+        <div class="product-item" data-category="fresh">
+            <div class="product-image">
+                <img src="{{ asset('images/FRESH.webp') }}" alt="Connection Failed" />
+            </div>
+            <div class="product-details">
+                <h2>Fresh Vegetables</h2>
+                <p>but it is often grown as an annual crop even if biennial and perennial forms exist</p>
+            </div>
+            
+        </div>
 
-       
-
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeChatModal()">&times;</span>
-            <h2 id="farmerName"></h2>
-            <textarea id="chatMessage" rows="4" cols="50" placeholder="Type your message..."></textarea>
-            <button onclick="sendMessage()">Send</button>
+        <!-- Product 2 -->
+        <div class="product-item" data-category="organic">
+            <div class="product-image">
+                <img src="{{ asset('images/irishpatatooes.jpg') }}" alt="Product 2" />
+            </div>
+            <div class="product-details">
+                <h2>Organic Products</h2>
+                <p>Tomato is a perennial herbaceous plant </p>
+            </div>
         </div>
     </div>
 
-    <script>
-        function openChat(farmerName) {
-            document.getElementById('farmerName').innerText = farmerName;
-            document.getElementById('myModal').style.display = 'flex';
-        }
+    
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const categorySelect = document.getElementById('category');
+        const productItems = document.querySelectorAll('.product-item');
 
-        function closeChatModal() {
-            document.getElementById('myModal').style.display = 'none';
-        }
+        categorySelect.addEventListener('change', function () {
+            const selectedCategory = categorySelect.value;
 
-        function sendMessage() {
-            var farmerName = document.getElementById('farmerName').innerText;
-            var userMessage = document.getElementById('chatMessage').value;
+            productItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
 
-            if (userMessage.trim() !== '') {
-                alert('Sending message to ' + farmerName + ': ' + userMessage);
-                closeChatModal();
-                // Implement further actions, e.g., sending the message to the server
-            }
-        }
-    </script>
-
+                if (selectedCategory === 'all' || selectedCategory === itemCategory) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
-
