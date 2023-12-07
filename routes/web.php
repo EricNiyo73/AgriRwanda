@@ -31,12 +31,14 @@ Route::delete('/destroyUser/{user}', [UserController::class,'destroyUser'])->nam
 
 
 
+
+// In web.php
+Route::get('/farmerform', [PagesController::class, 'farmerForm'])->name('farmerform')->middleware('guest');
+Route::post('/farmerform', [PagesController::class, 'submitFarmerForm'])->name('farmerform.submit')->middleware('guest');
+
+
 // routes/web.php
 
-// // Login
-// Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
-// // Route::post('/login', [LoginController::class, 'login'])->middleware('guest');
 
-// // Register
-// Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('guest');
-// // Route::post('/register', [RegisterController::class, 'register'])->middleware('guest');
+Route::get('/farmerform/update/{productId}', [FarmerController::class, 'showUpdateForm'])->name('farmerform.update')->middleware('guest');
+Route::post('/farmerform/update/{productId}', [FarmerController::class, 'updateProduct'])->middleware('guest');
