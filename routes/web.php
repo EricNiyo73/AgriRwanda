@@ -42,3 +42,12 @@ Route::post('/farmerform', [PagesController::class, 'submitFarmerForm'])->name('
 
 Route::get('/farmerform/update/{productId}', [FarmerController::class, 'showUpdateForm'])->name('farmerform.update')->middleware('guest');
 Route::post('/farmerform/update/{productId}', [FarmerController::class, 'updateProduct'])->middleware('guest');
+// routes/web.php
+
+// // Login
+// Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
+// // Route::post('/login', [LoginController::class, 'login'])->middleware('guest');
+
+// // Register
+// Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('guest');
+// // Route::post('/register', [RegisterController::class, 'register'])->middleware('guest');
