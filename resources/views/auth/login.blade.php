@@ -46,7 +46,7 @@
     </div>
 
     <div class="inputDiv">
-        <label for="password">Password</label>
+        <label for="password">Ijambo banga</label>
         <div class="input">
             <span class='icon'>&#x1F512;</span>
             <input type='password' id='password' name="password" placeholder='Ijambo banga' />
@@ -58,7 +58,7 @@
         <span class='icon'>&#x2192;</span>
     </button>
                     <span class='forgotPassword'>
-                        Forget your password? <a href="">Click Here</a>
+                        Forget your password? <a href="">Kanda Hano</a>
                     </span>
                 </form>
             </div>
