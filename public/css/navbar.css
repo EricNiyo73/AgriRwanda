@@ -1,0 +1,89 @@
+
+/* Add this CSS style in your Blade view or a separate CSS file */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    color: #26461B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links a {
+    color: #26461B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #329D23;
+}
+
+.connect a {
+    color: #26461B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.connect a:hover {
+    background-color: #329D23;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 15px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #343a40;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .connect {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+.footer_section {
+    background-color: #F3FFF2;
+    color: #234821;
+    padding: 40px 0;
+  }
+  .logo h2{
+    font-size: 1.2rem;
+  }
+  .footer_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer_content {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .footer_section .logo img {
+    width: 100px; /* Adjust the logo size as needed */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .link_icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+  }
+  
+  .quicklink_footer {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  .quicklink_footer ul li a {
+    text-decoration: none;
+    color: #234821; 
+    transition: color 0.3s ease;
+  }
+  
+  /* .quicklink_footer ul li a:hover {
+    color: #00bcd4; 
+  } */
+  
+  .copy_right {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

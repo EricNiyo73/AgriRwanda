@@ -1,0 +1,66 @@
+
+.experts_container{
+    margin-top: 12px;
+    align-items: center;
+}
+.expertssmallcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3FFF2;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(85, 80, 80, 0.1);
+    margin-top: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    overflow: hidden;
+    margin-right: 27px;
+  }
+  
+  .image img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .contentsniper {
+    flex: 2; 
+    padding: 20px;
+  }
+  
+  .contentsniper h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contentsniper p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .contentsniper button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #234821;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contentsniper button:hover {
+    background-color: #329D23;
+  }
+  
+  
