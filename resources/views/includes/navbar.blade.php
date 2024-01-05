@@ -83,13 +83,7 @@
                 <div class="connect">
                     <a href="{{ route('login') }}">Login</a>
                     <a href="{{ route('register') }}">Register</a>
-<<<<<<< Updated upstream
                 </div>
-=======
-                    <a href="{{ route('farmerform') }}">Reg</a> 
-                </div>
-
->>>>>>> Stashed changes
             </div>
         </div>
     </nav>
@@ -104,11 +98,7 @@
             document.querySelector(target).scrollIntoView({
                 behavior: 'smooth'
             });
-<<<<<<< Updated upstream
             toggleMenu(); // Close the menu after clicking a link
-=======
-            toggleMenu(); 
->>>>>>> Stashed changes
         }
     </script>
 
