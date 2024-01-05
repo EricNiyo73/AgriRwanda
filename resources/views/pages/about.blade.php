@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="About_container">
+     <div id="about" class="About_container">
         <div class="image_container">
             <img src="{{ asset('images/about.jpg') }}" alt="About Us Image" />
         </div>

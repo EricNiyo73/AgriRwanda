@@ -198,4 +198,12 @@ return [
 
     'same_site' => 'lax',
 
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+    ],
+    
+
 ];

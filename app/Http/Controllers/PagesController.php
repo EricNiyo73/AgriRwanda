@@ -40,6 +40,7 @@ class PagesController extends Controller
     {
         return view('auth.register'); 
     }
+    
     public function farmerForm()
     {
         return view('auth.farmerform');

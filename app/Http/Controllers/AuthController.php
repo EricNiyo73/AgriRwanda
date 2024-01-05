@@ -41,20 +41,27 @@ class AuthController extends Controller
 
 
   public function loginuser(Request $request)
-  {
-      $credentials = $request->validate([
-          'telephone' => 'required',
-          'password' => 'required',
-      ]);
-      $user = users::where('telephone', $credentials['telephone'])->first();
+ {
+  $credentials = $request->validate([
+    'telephone' => 'required',
+    'password' => 'required',
+]);
+$user = users::where('telephone', $credentials['telephone'])->first();
 
-      // Check password
-      if(!$user || !Hash::check($credentials['password'], $user->password)) {
-        return redirect()->back()->withInput()->withErrors(['telephone' => 'imyirondoro yawe ntibonetse']);
+// Check password
+if (!$user || !Hash::check($credentials['password'], $user->password)) {
+    return redirect()->back()->withInput()->withErrors(['telephone' => 'imyirondoro yawe ntibonetse']);
+}
 
-      }
-      return redirect()->route('home');
-  }
+if ($user->role === 'Admin') {
+  return redirect()->route('admin.dashboard');
+} elseif ($user->role === 'Agronomy') {
+  
+  return view('pages.CopyHome');
+}
+
+return redirect()->route('home');
+ }
 
   public function logout(Request $request) {
     auth()->user()->tokens()->delete();

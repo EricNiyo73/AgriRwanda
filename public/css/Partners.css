@@ -42,4 +42,10 @@
 .logparterns:hover img {
     border: 3px solid #fff; 
 }
-
+@media screen and (max-width: 768px){
+    .partnerflex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

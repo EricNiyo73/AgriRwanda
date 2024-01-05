@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="contact_container">
+    <div id="contact" class="contact_container">
         <div class="left_container">
             <h1>Need any help?</h1>
             <p>

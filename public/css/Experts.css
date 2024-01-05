@@ -63,4 +63,12 @@
     background-color: #329D23;
   }
   
+  @media screen and (max-width: 768px){
+    .expertssmallcard{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+  }
   

@@ -1,5 +1,4 @@
-
-/* Add this CSS style in your Blade view or a separate CSS file */
+/* 
 
 body {
     margin: 0;
@@ -11,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #FFFFFF;
+    background-color: #7de65a;
     color: #26461B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -63,12 +62,31 @@ body {
     padding: 8px 15px;
 }
 
-/* Responsive Styles */
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: #26461B;
+    transition: 0.4s;
+}
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+    .container-fluid {
+        flex-direction: row;
         align-items: flex-start;
+    }
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
     }
 
     .links {
@@ -76,11 +94,126 @@ body {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #343a40;
+        background-color: #7de65a;
+        position: absolute;
+        top: 0px; 
+        left: 0;
+        z-index: 1;
+    }
+    .container-fluid.show-links .links {
+        display: flex;
+    }
+    .links.show {
+        display: flex;
+    }
+
+    .connect {
+        margin-top: 1rem;
+        max-height: 200px;
+    }
+} */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #7de65a;
+    color: #26461B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links a {
+    color: #26461B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #329D23;
+}
+
+.connect a {
+    color: #26461B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.connect a:hover {
+    background-color: #329D23;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 15px;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.bar {
+    height: 3px;
+    width: 30px;
+    background-color: #26461B;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #7de65a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
     }
 
     .links.show {
         display: flex;
+    }
+
+    .links a {
+        margin: 10px 0;
     }
 
     .connect {
