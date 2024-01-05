@@ -8,14 +8,6 @@ use App\Models\users;
 
 class UserController extends Controller
 {
-//     public function showuser($id)
-//   {
-//     $user = users::find($id);
-//     return view('user.showuser', compact('user'));
-//   }
-// public function showEdit(){
-//     return view('user.editing');
-// }
 
 public function showAll(){
     $users = users::all(); // Fetch all users

@@ -9,19 +9,18 @@
     padding: 40px;
     background-color: #fafafa;
 }
-.image_container img{
+.image_container img {
     border-radius: 1rem;
 }
 .imageleft {
     flex: 1;
     margin: 0px 20px;
-    background-color: #26461B;
+    background-color: #7de65a;
 }
 
 .imageleft img {
     width: 100%;
     box-sizing: border-box;
-    
 }
 
 .right_content {
@@ -33,7 +32,7 @@
 .right_content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #26461B;
+    color: #26461b;
     min-width: 2px;
 }
 
@@ -52,19 +51,19 @@ p {
 }
 
 .about_button button {
-    font-family: 'Arial, sans-serif';
+    font-family: "Arial, sans-serif";
     font-size: 16px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    background-color: #26461B;
+    background-color: #26461b;
     color: white;
 }
 
 .about_button button:hover {
-    background-color: #26461B;
+    background-color: #26461b;
     color: white;
     transform: scale(1.05);
 }

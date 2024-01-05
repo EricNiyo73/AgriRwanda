@@ -3,12 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\farmers;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $products = farmers::all();
+        foreach ($products as $product) {
+            $carbonDate = Carbon::parse($product->created_at);
+            $product->formatted_created_at = $carbonDate->format('j F Y');
+            // $product->short_description = Str::limit($product->product_description, 10);
+            $product->short_desc = Str::limit($product->product_description, 100);
+
+        }
+
+        return view('pages.home', compact('products'));
+        // return view('pages.home');
     }
 
     public function about()
@@ -40,17 +53,6 @@ class PagesController extends Controller
     {
         return view('auth.register'); 
     }
-    public function farmerForm()
-    {
-        return view('auth.farmerform');
-    }
 
-    // If you want to handle form submission for farmerForm
-    public function submitFarmerForm(Request $request)
-    {
-        // Handle form submission logic here
-        // You can access form data using $request->input('field_name')
 
-        return redirect()->back()->with('success', 'Form submitted successfully!');
-    }
 }

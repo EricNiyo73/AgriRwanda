@@ -18,8 +18,6 @@
         <label for="telephone">Telephone:</label>
         <input type="text" id="telephone" name="telephone" value="{{ $user->telephone }}" required>
 
-        <!-- Add other fields as needed -->
-
         <button type="submit">Update User</button>
     </form>
 </body>

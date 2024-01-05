@@ -17,10 +17,10 @@
 
     <div class="container mt-4">
         @yield('content')
-        
+       
     </div>
     @include('includes.footer')
-  
+   
     <!-- Include Bootstrap JS here if needed -->
 </body>
 </html>
