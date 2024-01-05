@@ -57,7 +57,12 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+<<<<<<< Updated upstream
   }
+=======
+}
+  
+>>>>>>> Stashed changes
   @media screen and (max-width: 768px){
 
     .contact_container{
@@ -66,4 +71,8 @@
       align-items: center;
       padding: 30px;
     }
+<<<<<<< Updated upstream
   }
+=======
+  }
+>>>>>>> Stashed changes

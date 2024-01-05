@@ -20,6 +20,28 @@
   .footer_content {
     flex: 1;
     max-width: 400px;
+<<<<<<< Updated upstream
+=======
+}
+
+.footer_section .logo img {
+    width: 100px; /* Adjust the logo size as needed */
+  }
+  .footer_flex {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer_content {
+    flex: 1;
+    max-width: 400px;
+>>>>>>> Stashed changes
   }
   
   .footer_section .logo img {
@@ -62,7 +84,11 @@
   .copy_right {
     margin-top: 20px;
     text-align: center;
+<<<<<<< Updated upstream
   }
+=======
+}
+>>>>>>> Stashed changes
   
   /* @media screen and (max-width: 768px){
     .footer_flex{
@@ -112,4 +138,8 @@
     .copy_right {
         margin-top: 20px;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

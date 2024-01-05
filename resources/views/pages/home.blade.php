@@ -24,6 +24,7 @@
                 <a href="{{ route('farmerform') }}">Farmer Form</a>
             @elseif(auth()->user()->role === 'Admin')
                 <a href="{{ route('admin.dashboard') }}">Admin Dashboard</a>
+               
             @endif
             <a href="{{ route('logout') }}">Logout</a>
         @else
