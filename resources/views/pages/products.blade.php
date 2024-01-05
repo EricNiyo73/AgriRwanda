@@ -64,7 +64,7 @@ Murakoze kudufasha kumenyekanisha ubuhinzi bukorerwa iwacu iwacu mu Rwanda.
                     <img class="product-image" src="{{ asset('storage/' . $product->image) }}" />
                 </div>
                 <div class="product-details">
-                <a href="{{ route('products.contacting', $product->id) }}">View Farmer Details</a>
+                <a href="{{ route('products.contacting', $product->id) }}">View Farmer Detail</a>
                     <h4>{{ $product->category }}</h4>
                     <p>{{ $product->short_desc }}</p>
                     <h4>Hasigaye: {{ $product->quantity }}, {{ $product->quantity_unit }}</h4>
