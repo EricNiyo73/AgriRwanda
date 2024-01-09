@@ -30,14 +30,14 @@ public function update(Request $request, $id)
     $user = users::find($id);
     $user->update($validatedData);
 
-    return redirect()->route('user.showAll')->with('success', 'User updated successfully.');
+    return redirect()->route('admin.allUsers')->with('success', 'User updated successfully.');
 }
 
 public function destroyUser($id)
 {
     $user = users::find($id);
     $user->delete();
-    return redirect()->route('user.showAll')->with('success', 'User deleted successfully.');
+    return redirect()->route('admin.allUsers')->with('success', 'User deleted successfully.');
 }
 
 }

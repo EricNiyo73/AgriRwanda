@@ -136,21 +136,21 @@
                 <li>
                     <i class='bx bxs-calendar-check'></i>
                     <span class="text">
-                        <h3>10</h3>
+                        <h3>{{ $registeredUsers }}</h3>
                         <p>Active Members</p>
                     </span>
                 </li>
                 <li>
                     <i class='bx bxs-group'></i>
                     <span class="text">
-                        <h3>24</h3>
-                        <p>Companies/Cooperatives</p>
+                        <h3>{{ $agronomyUsersCount }}</h3>
+                        <p>Number of Agronomy registered</p>
                     </span>
                 </li>
                 <li>
                     <i class='bx bxs-dollar-circle'></i>
                     <span class="text">
-                        <h3>2543</h3>
+                        <h3>{{ $registeredProductsCount }}</h3>
                         <p>Registered Products</p>
                     </span>
                 </li>

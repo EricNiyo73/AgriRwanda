@@ -13,14 +13,13 @@
     <title>Product Page with Chat</title>
 </head>
 <body>
-
-@if(count($products) > 0)
+ @if($products && count($products) > 0)
     <div class="title">
         <h1>Menya kandi Uhitamo Igihigwa Ushaka Hano</h1>
     </div>
     <div class="searchdisplay">
     <div class="filter-container">
-    <form action="{{ route('products.filter') }}" method="GET" id="categoryForm">
+    <form action="{{ route('agronomy.filter') }}" method="GET" id="categoryForm">
         <label for="category">Filter by Category:</label>
         <select id="category" name="category" onchange="document.getElementById('categoryForm').submit()">
             <option value="all">All Categories</option>
@@ -33,7 +32,7 @@
     </form>
 </div>
 
-<form action="{{ route('products.search') }}" method="GET" class="search-form">
+<form action="{{ route('agronomy.filter') }}" method="GET" class="search-form">
     <input type="text" name="search" placeholder="Search products...">
     <button type="submit">
         Search

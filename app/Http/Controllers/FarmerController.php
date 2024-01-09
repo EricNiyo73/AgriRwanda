@@ -17,11 +17,12 @@ class FarmerController extends Controller
             $product->formatted_created_at = $carbonDate->format('j F Y');
             $product->short_description = Str::limit($product->product_description, 10);
             $product->short_desc = Str::limit($product->product_description, 50);
+            
         }
 
         return view('auth.farmerform', compact('products'));
     }
-    public function submitForm(Request $request){
+    public function submitFarmerForm(Request $request){
         try{
             $request->validate([
             'fullname' => 'required',

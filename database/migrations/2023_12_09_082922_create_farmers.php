@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('district');
             $table->string('category');
             $table->string('product_name');
-            $table->string('image'); // Assuming you'll store the image file path
+            $table->string('image'); 
             $table->text('product_description');
             $table->integer('quantity');
             $table->string('quantity_unit');

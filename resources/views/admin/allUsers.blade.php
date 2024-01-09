@@ -129,34 +129,21 @@
                         </thead>
                         <tbody>
                             <!-- Static data for demonstration purposes -->
-                            <tr>
-                                <td>1</td>
-                                <td>John Doe</td>
-                                <td>john@example.com</td>
-                                <td>
-                                    <a href="#" class="edit-button">Edit</a>
-                                    <a href="#" class="delete-button">Delete</a>
-                                </td>
-                            </tr>
-                           
-                            <tr>
-                                <td>2</td>
-                                <td>John Doe</td>
-                                <td>john@example.com</td>
-                                <td>
-                                    <a href="#" class="edit-button">Edit</a>
-                                    <a href="#" class="delete-button">Delete</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>John Doe</td>
-                                <td>john@example.com</td>
-                                <td>
-                                    <a href="#" class="edit-button">Edit</a>
-                                    <a href="#" class="delete-button">Delete</a>
-                                </td>
-                            </tr>
+                          @foreach($users as $user)
+                <tr>
+                    <td>{{ $user->id }}</td>
+                    <td>{{ $user->fullname }}</td>
+                    <td>{{ $user->telephone }}</td>
+                    <td>
+                        <a href="{{ route('user.editing', $user->id) }}">Edit</a>
+                        <form action="{{route('user.destroyUser',$user->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" onclick="return confirm('Are you sure you want to delete this user?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
                         </tbody>
                     </table>
                 </div>

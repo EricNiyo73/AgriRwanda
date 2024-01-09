@@ -118,70 +118,20 @@
 
             <div class="product-list">
         <!-- Product Item (Sample) -->
-        <div class="product-item">
-            <img src="{{ asset('images/sample-product1.jpg') }}" alt="Product Image">
-            <h2>Product 1</h2>
-            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Fruits</span>
-            <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-
-        <!-- Product Item (Sample) -->
-        <div class="product-item">
-            <img src="{{ asset('images/sample-product2.jpg') }}" alt="Product Image">
-            <h2>Product 2</h2>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Vegetables</span>
-            <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
+     @foreach($products as $product)
 
         <div class="product-item">
-            <img src="{{ asset('images/sample-product2.jpg') }}" alt="Product Image">
-            <h2>Product 2</h2>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Vegetables</span>
+            <img src="{{ asset('storage/' . $product->image) }}" alt="Product Image">
+            <h2>{{ $product->product_name }}</h2>
+            <p>{{ $product->short_desc }}</p>
+            <span class="category">{{ $product->category }}</span>
             <div class="buttons">
                 <button class="edit-btn">Edit</button>
                 <button class="delete-btn">Delete</button>
             </div>
         </div>
-        <div class="product-item">
-            <img src="{{ asset('images/sample-product2.jpg') }}" alt="Product Image">
-            <h2>Product 2</h2>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Vegetables</span>
-            <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-        <div class="product-item">
-            <img src="{{ asset('images/sample-product2.jpg') }}" alt="Product Image">
-            <h2>Product 2</h2>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Vegetables</span>
-            <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-        <div class="product-item">
-            <img src="{{ asset('images/sample-product2.jpg') }}" alt="Product Image">
-            <h2>Product 2</h2>
-            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="category">Vegetables</span>
-            <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-
+            @endforeach
+      
     </div>
 
             </div>

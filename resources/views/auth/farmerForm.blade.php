@@ -15,7 +15,7 @@
                 </ul>
             </div>
         @endif
-        <form action="{{ route('farmerform.submit') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('farmerform.sub') }}" method="post" enctype="multipart/form-data">
         @csrf
         @method('post')
              <div class="form-group_container">
@@ -33,20 +33,20 @@
                 <label for="district">District:</label>
                 <select id="district" name="district" required>
                 <option selected>Hitamo</option>
-                    <option value="rulindo">Rulindo</option>
-                    <option value="huye">Huye</option>
-                    <option value="musanze">Musanze</option>
-                    <option value="nyaruguru">Nyaruguru</option>
-                    <option value="bugesera">Bugesera</option>
-                    <option value="kanyonza">Kayonza</option>
-                    <option value="nyamagabe">Nyamagabe</option>
-                    <option value="nyanza">Nyanza</option>
-                    <option value="gicumbi">Gicumbi</option>
-                    <option value="burera">Burera</option>
-                    <option value="ruhando">Ruhango</option>
-                    <option value="kirehe">Kirehe</option>
-                    <option value="rwamagana">Rwamagana</option>
-                    <option value="gakenye">Gakenke</option>
+                    <option value="Rulindo">Rulindo</option>
+                    <option value="Huye">Huye</option>
+                    <option value="Musanze">Musanze</option>
+                    <option value="Nyaruguru">Nyaruguru</option>
+                    <option value="Bugesera">Bugesera</option>
+                    <option value="Kayonza">Kayonza</option>
+                    <option value="Nyamagabe">Nyamagabe</option>
+                    <option value="Nyanza">Nyanza</option>
+                    <option value="Gicumbi">Gicumbi</option>
+                    <option value="Burera">Burera</option>
+                    <option value="Ruhango">Ruhango</option>
+                    <option value="Kirehe">Kirehe</option>
+                    <option value="Rwamagana">Rwamagana</option>
+                    <option value="Gakenke">Gakenke</option>
                 </select>
             </div>
 
