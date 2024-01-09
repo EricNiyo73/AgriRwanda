@@ -37,6 +37,7 @@
                 <li><a href="/">Farming Practices</a></li>
                 <li><a href="/">Expert Advice</a></li>
                 <li><a href="/">Partnerships</a></li>
+                <li><a href="/">FAQs</a></li>
             </ul>
         </div>
         <div class="quicklink_footer">
