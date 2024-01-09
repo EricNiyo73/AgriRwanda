@@ -16,7 +16,7 @@
 
 @if(count($products) > 0)
     <div class="title">
-        <h1>Menya kandi Uhitamo Igihigwa Ushaka </h1>
+        <h1>Menya kandi Uhitamo Igihigwa Ushaka Hano</h1>
     </div>
     <div class="searchdisplay">
     <div class="filter-container">
