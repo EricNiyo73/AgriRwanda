@@ -115,72 +115,54 @@
         <!-- MAIN -->
         <main>
     <div class="head-title">
-        <h2>Agronomy Officer Management</h2>
-        <p>All activities related to the agronomy officer</p>
+               <!-- Table containing advice data -->
+               <table class="advice-table">
+            <thead>
+                <tr>
+                    <th>District</th>
+                    <th>Category</th>
+                    <th>Plant Name</th>
+                    <th>File/Video/Document</th>
+                    <th>Additional Information</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>Kigali</td>
+                    <td>Fertilization</td>
+                    <td>Tomato</td>
+                    <td><a href="#" target="_blank">File Link</a></td>
+                    <td>Use organic fertilizer for better results.</td>
+                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Musanze</td>
+                    <td>Pest Control</td>
+                    <td>Maize</td>
+                    <td><a href="#" target="_blank">Video Link</a></td>
+                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
+                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Musanze</td>
+                    <td>Pest Control</td>
+                    <td>Maize</td>
+                    <td><a href="#" target="_blank">Video Link</a></td>
+                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
+                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+        
     </div>
 
-    <!-- Agronomy Officer Activities -->
-    <section class="setting-section">
-        <h3>Agronomy Officer Activities</h3>
-
-        <!-- Add Activity Form -->
-        <div class="setting-option">
-            <h4>Add New Activity</h4>
-            <form action="#" method="post">
-                <label for="activityName">Activity Name:</label>
-                <input type="text" id="activityName" name="activityName" required>
-
-                <label for="activityDescription">Activity Description:</label>
-                <textarea id="activityDescription" name="activityDescription" rows="4" required></textarea>
-
-                <button type="submit">Add Activity</button>
-            </form>
-        </div>
-
-        <!-- List of Activities -->
-        <div class="setting-option">
-            <h4>Activity List</h4>
-            <ul>
-                <li>Activity 1 - Description of Activity 1</li>
-                <li>Activity 2 - Description of Activity 2</li>
-                <!-- Add dynamic content or fetch from the database -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Agronomy Officer Actions -->
-    <section class="setting-section">
-        <h3>Agronomy Officer Actions</h3>
-
-        <!-- Add Action Form -->
-        <div class="setting-option">
-            <h4>Add New Action</h4>
-            <form action="#" method="post">
-                <label for="actionName">Action Name:</label>
-                <input type="text" id="actionName" name="actionName" required>
-
-                <label for="actionDescription">Action Description:</label>
-                <textarea id="actionDescription" name="actionDescription" rows="4" required></textarea>
-
-                <button type="submit">Add Action</button>
-            </form>
-        </div>
-
-        <!-- List of Actions -->
-        <div class="setting-option">
-            <h4>Action List</h4>
-            <ul>
-                <li>Action 1 - Description of Action 1</li>
-                <li>Action 2 - Description of Action 2</li>
-                <!-- Add dynamic content or fetch from the database -->
-            </ul>
-        </div>
-    </section>
 </main>
-
-        <!-- MAIN -->
     </section>
-    <!-- CONTENT -->
+   
 
 </body>
 
