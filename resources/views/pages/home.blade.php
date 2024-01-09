@@ -1,7 +1,4 @@
-<!-- resources/views/pages/home.blade.php -->
-
 @extends('layouts.app')
-
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/Home.css') }}">
     <div class="homepage">
@@ -22,6 +19,18 @@
                 <button type="button">Explore Our Service ..</button>
             </div>
         </div>
+        @auth
+            @if(auth()->user()->role === 'Farmer')
+                <a href="{{ route('farmerform') }}">Farmer Form</a>
+            @elseif(auth()->user()->role === 'Admin')
+                <a href="{{ route('admin.dashboard') }}">Admin Dashboard</a>
+               
+            @endif
+            <a href="{{ route('logout') }}">Logout</a>
+        @else
+            <!-- <a href="{{ route('login') }}">Login</a>
+            <a href="{{ route('register') }}">Register</a> -->
+        @endauth
     </div>
     @include('pages.products')
     @include('pages.about')
@@ -29,4 +38,3 @@
     @include('pages.contact')
     @include('pages.parterns')
 @endsection
-

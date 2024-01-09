@@ -11,12 +11,8 @@
                 Explore the latest news, quotes,
                 and technological information in the agricultural sector with Agri_unity Rwanda.
             </p>
-            <div class="link_icons">
-                <i class="fab fa-facebook-messenger"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-whatsapp-square"></i>
-            </div>
+            
+            
         </div>
         <div class="quicklink_footer">
             <h4>Quick Links</h4>
@@ -40,6 +36,6 @@
         </div>
     </div>
     <div class="copy_right">
-        <p>&copy; {{ date('Y') }} All rights reserved | This Website is made with ❤️ by Alain-Eric</p>
+        <p>&copy; {{ date('2024') }} All rights reserved | This Website is made with  by Alain-Eric</p>
     </div>
 </div>

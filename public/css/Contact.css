@@ -57,4 +57,26 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+<<<<<<< HEAD
 }
+=======
+<<<<<<< Updated upstream
+  }
+=======
+}
+  
+>>>>>>> Stashed changes
+  @media screen and (max-width: 768px){
+
+    .contact_container{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 30px;
+    }
+<<<<<<< Updated upstream
+  }
+=======
+  }
+>>>>>>> Stashed changes
+>>>>>>> view

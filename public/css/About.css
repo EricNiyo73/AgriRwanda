@@ -68,12 +68,15 @@ p {
     transform: scale(1.05);
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .About_container {
         padding: 20px;
         display: flex;
         flex-direction: column;
+    }
+    .image_container img{
+       width: 100%;
     }
 
     .imageleft,
