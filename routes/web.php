@@ -17,6 +17,8 @@ Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::get('/login', [PagesController::class, 'login'])->name('login');
 Route::get('/register', [PagesController::class, 'register'])->name('register');
+Route::get('/agronomyHome', [PagesController::class, 'copyhome'])->name('Copyhome');
+
 
 Route::post('/registeruser', [AuthController::class, 'storeuser'])->name('user.storeuser');
 Route::post('/loginuser', [AuthController::class, 'loginuser'])->name('user.loginuser');

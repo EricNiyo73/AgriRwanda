@@ -57,7 +57,7 @@ if ($user->role === 'Admin') {
   return redirect()->route('admin.dashboard');
 } elseif ($user->role === 'Agronomy') {
   
-  return view('pages.CopyHome');
+  return redirect()->route('Copyhome');
 }
 
 return redirect()->route('home');
