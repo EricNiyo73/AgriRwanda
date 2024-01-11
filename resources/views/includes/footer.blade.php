@@ -70,7 +70,7 @@
 
     </div>
     <div class="copy_right">
-        <p>&copy; {{ date('Y') }} All rights reserved | Desinned and Developed by Alain-Eric</p>
+        <p>&copy; {{ date('Y') }} All rights reserved | Desinned and Developed 🌐 by Alain-Eric</p>
     </div>
 </div>
 
