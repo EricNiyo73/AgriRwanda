@@ -160,91 +160,81 @@
             <div class="table-data">
                 <div class="order">
                     <div class="head">
-                        <h3>Recent Orders</h3>
+                        <h3>Recent Posted product</h3>
                         <i class='bx bx-search'></i>
                         <i class='bx bx-filter'></i>
                     </div>
                     <table>
                         <thead>
                             <tr>
-                                <th>User</th>
-                                <th>Date Order</th>
-                                <th>Status</th>
+                                <th>Name of plants</th>
+                                <th>Category of plants</th>
+                                <th>Quantity</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/modern.jpg') }}" />
-                                    <p>Alain Nig</p>
+                                    <img src="{{ asset('images/banana.jpg') }}" />
+                                    <p>amateke</p>
                                 </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
+                                <td>fresh vegatale</td>
+                                <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="{{ asset('images/modern.jpg') }}" />
                                     <p>Alain Nig</p>
                                 </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
+                                <td>fresh vegatale</td>
+                                <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="{{ asset('images/modern.jpg') }}" />
                                     <p>Alain Nig</p>
                                 </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status process">Process</span></td>
+                                <td>fresh vegatale</td>
+                                <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="{{ asset('images/modern.jpg') }}" />
                                     <p>Alain Nig</p>
                                 </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status pending">Pending</span></td>
+                                <td>fresh vegatale</td>
+                                <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="{{ asset('images/modern.jpg') }}" />
                                     <p>Alain Nig</p>
                                 </td>
-                                <td>01-10-2021</td>
-                                <td><span class="status completed">Completed</span></td>
+                                <td>Fresh Vegatale</td>
+                                <td>20KG</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="todo">
-                    <div class="head">
-                        <h3>Todos</h3>
-                        <i class='bx bx-plus'></i>
-                        <i class='bx bx-filter'></i>
-                    </div>
-                    <ul class="todo-list">
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                        <li class="not-completed">
-                            <p>Todo List</p>
-                            <i class='bx bx-dots-vertical-rounded'></i>
-                        </li>
-                    </ul>
-                </div>
+        <div class="head">
+            <h3>Todos</h3>
+            <i class='bx bx-plus'></i>
+            <i class='bx bx-filter'></i>
+        </div>
+        <!-- Customize your todo list based on agricultural tasks -->
+        <ul class="todo-list">
+            <li class="completed">
+                <p>Prepare soil for planting</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <li class="not-completed">
+                <p>Check irrigation system</p>
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </li>
+            <!-- Add more tasks as needed -->
+        </ul>
+    </div>
             </div>
         </main>
         <!-- MAIN -->
