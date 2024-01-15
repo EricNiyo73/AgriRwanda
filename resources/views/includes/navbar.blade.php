@@ -24,14 +24,14 @@
             </div>
 
             <div class="links">
-                <a href="#" onclick="smoothScroll('#home')">Home</a>
-                <a href="#" onclick="smoothScroll('#about')">About</a>
+                <a href="/" onclick="smoothScroll('#home')">Ahabanza</a>
+                <a href="#" onclick="smoothScroll('#about')">Ibitwerekeyeho</a>
                 <a href="#" onclick="smoothScroll('#service')">Service</a>
                 <a href="#" onclick="smoothScroll('#ourProduct')">Our Product</a>
-                <a href="#" onclick="smoothScroll('#contact')">Contact</a>
+                <a href="#" onclick="smoothScroll('#contact')">Twandikire</a>
                 <div class="connect">
-                    <a href="{{ route('login') }}">Login</a>
-                    <a href="{{ route('register') }}">Register</a>
+                    <a href="{{ route('login') }}">Injira</a>
+                    <a href="{{ route('register') }}">Iyandikishe</a>
                 </div>
             </div>
         </div>

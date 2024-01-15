@@ -114,66 +114,42 @@
 
         <!-- MAIN -->
         <main>
-            <div class="head-title">
-                <!-- Table containing advice data -->
-                <table class="advice-table">
-                    <thead>
-                        <tr>
-                            <th>District</th>
-                            <th>Category</th>
-                            <th>Plant Name</th>
-                            <th>File/Video/Document</th>
-                            <th>Additional Information</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Sample Data -->
-                        <tr>
-                            <td>Kigali</td>
-                            <td>Fertilization</td>
-                            <td>Tomato</td>
-                            <td>
-                                <video width="180" height="100" controls style="max-width: 100%;">
-                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </td>
-                            <td>Use organic fertilizer for better results.</td>
-                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>Kigali</td>
-                            <td>Fertilization</td>
-                            <td>Tomato</td>
-                            <td>
-                                <video width="180" height="100" controls style="max-width: 100%;">
-                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </td>
-                            <td>Use organic fertilizer for better results.</td>
-                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>Kigali</td>
-                            <td>Fertilization</td>
-                            <td>Tomato</td>
-                            <td>
-                                <video width="180" height="100" controls style="max-width: 100%;">
-                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </td>
-                            <td>Use organic fertilizer for better results.</td>
-                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-            </div>
+    <div class="head-title">
+               <!-- Table containing advice data -->
+               <table class="advice-table">
+            <thead>
+                <tr>
+                    <th>District</th>
+                    <th>Category</th>
+                    <th>Plant Name</th>
+                    <th>File/Video/Document</th>
+                    <th>Additional Information</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                @foreach ($agronomy as $agro)
+                <tr>
+                    <td>{{$agro->district}}</td>
+                    <td>{{$agro->category}}</td>
+                    <td>{{$agro->plant_name}}</td>
+                    <td><a href="#" target="_blank">File Link</a></td>
+                    <td>{{$agro->short_desc}}</td>
+                    <td>
+                
+                 <form action="{{route('advice.deleting',$agro->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete this Product?')">Delete</button>
+                        </form></td>
+                </tr>
+               @endforeach
+            </tbody>
+        </table>
+    </div>
+        
+    </div>
 
         </main>
     </section>

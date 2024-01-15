@@ -15,9 +15,9 @@
                     <p>adopt the peace of nature!</p>
                 </div>
                 <div class="footerDiv flex">
-                    <span class='text'>Do not have any account?</span>
+                    <span class='text'>Nta Konte ufite?</span>
                     <a href="{{ url('/register') }}">
-                        <button class='btn'>Sign up</button>
+                        <button class='btn'>Iyandikishe</button>
                     </a>
                 </div>
             </div>
@@ -54,11 +54,11 @@
     </div>
 
     <button type='submit' class='btn flex'>
-        <span>Login</span>
+        <span>Injira</span>
         <span class='icon'>&#x2192;</span>
     </button>
                     <span class='forgotPassword'>
-                        Forget your password? <a href="">Kanda Hano</a>
+                        Wibagiwe Ijambo banga? <a href="">Kanda Hano</a>
                     </span>
                 </form>
             </div>

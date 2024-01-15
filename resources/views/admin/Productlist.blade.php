@@ -126,8 +126,11 @@
             <p>{{ $product->short_desc }}</p>
             <span class="category">{{ $product->category }}</span>
             <div class="buttons">
-                <button class="edit-btn">Edit</button>
-                <button class="delete-btn">Delete</button>
+                <form action="{{route('product.deleting',$product->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete this Product?')">Delete</button>
+                        </form>
             </div>
         </div>
             @endforeach
@@ -136,9 +139,8 @@
 
             </div>
         </main>
-        <!-- MAIN -->
     </section>
-    <!-- CONTENT -->
+   
 
 </body>
 

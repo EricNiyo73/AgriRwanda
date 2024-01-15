@@ -15,12 +15,11 @@
                 Agri_UnityRwanda
             </div>
             <div class="links">
-                <a href="{{ route('home') }}">Home</a>
-                <a href="{{ route('about') }}">About</a>
-                <a href="{{ route('service') }}">Service</a>
-                <a href="{{ route('service') }}">Farming Practice</a>
-                <a href="{{ route('blog') }}">Our Product</a>
-                <a href="{{ route('contact') }}">Contact</a>
+                <a href="#" onclick="smoothScroll('#home')">Ahabanza</a>
+                <a href="#" onclick="smoothScroll('#about')">Ibitwerekeyeho</a>
+                <a href="#" onclick="smoothScroll('#service')">Service</a>
+                <a href="#" onclick="smoothScroll('#ourProduct')">Our Product</a>
+                <a href="#" onclick="smoothScroll('#contact')">Twandikire</a>
             </div>
             <div class="connect">
 

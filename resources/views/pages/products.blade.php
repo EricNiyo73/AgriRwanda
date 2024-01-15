@@ -22,12 +22,11 @@
     <form action="{{ route('agronomy.filter') }}" method="GET" id="categoryForm">
         <label for="category">Filter by Category:</label>
         <select id="category" name="category" onchange="document.getElementById('categoryForm').submit()">
-            <option value="all">All Categories</option>
-            <option value="ibikigwa">Ibikigwa by'ibinyamake</option>
-            <option value="diary">Diary and Other (Fish)</option>
-            <option value="fresh">Fresh Vegetables</option>
-            <option value="organic">Organic Products</option>
-            <option value="Ibihingwa Ngandurarugo">Ibingwa Ngandurarugo</option>
+                        <option value="all">Hitamo</option>
+                    <option value="Ibihigwa by'ibinyampeke">Ibihigwa by'ibinyampeke</option>
+                    <option value="Imbuto">Imbuto</option>
+                    <option value="Imgoga">Imboga</option>
+                    <option value="Ibihingwa Ngandurarugo">Ibihingwa Ngangurabukungu</option>
         </select>
     </form>
 </div>
