@@ -176,43 +176,12 @@
                             <tr>
                                 <td>
                                     <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>amateke</p>
+                                    <p>hhhh</p>
                                 </td>
                                 <td>fresh vegatale</td>
                                 <td>20KG</td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/modern.jpg') }}" />
-                                    <p>Alain Nig</p>
-                                </td>
-                                <td>fresh vegatale</td>
-                                <td>20KG</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/modern.jpg') }}" />
-                                    <p>Alain Nig</p>
-                                </td>
-                                <td>fresh vegatale</td>
-                                <td>20KG</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/modern.jpg') }}" />
-                                    <p>Alain Nig</p>
-                                </td>
-                                <td>fresh vegatale</td>
-                                <td>20KG</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="{{ asset('images/modern.jpg') }}" />
-                                    <p>Alain Nig</p>
-                                </td>
-                                <td>Fresh Vegatale</td>
-                                <td>20KG</td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>

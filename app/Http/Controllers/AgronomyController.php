@@ -29,7 +29,7 @@ class AgronomyController extends Controller
             'district' => 'required',
             'category' => 'required',
             'plant_name' => 'required',
-            'video' => 'required|mimes:mp4,pdf,avi,mov,wmv,flv|max:204800', // Adjust as needed
+            'video' => 'required|mimes:mp4,pdf,avi,mov,wmv,flv|max:407225098', // Adjust as needed
             'additional_info' => 'required',
             'in_charge' => 'required',
         ]);
