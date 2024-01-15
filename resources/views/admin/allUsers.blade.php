@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
     <link rel="stylesheet" href="{{ asset('css/adnin.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <title>Agri_unityRwanda</title>
 </head>

@@ -21,7 +21,7 @@
     <section id="sidebar">
         <a href="/" class="brand">
             <i class='bx bxs-smile'></i>
-        
+
             <span class="text">Agri_unityRwanda</span>
         </a>
         <ul class="side-menu top">
@@ -38,33 +38,33 @@
                 </a>
             </li>
             <li>
-            <a href="{{ route('admin.Productlist') }}">
+                <a href="{{ route('admin.Productlist') }}">
                     <i class='bx bxs-doughnut-chart'></i>
                     <span class="text">Products</span>
                 </a>
             </li>
             <li>
-            <a href="{{ route('admin.message') }}">
+                <a href="{{ route('admin.message') }}">
                     <i class='bx bxs-message-dots'></i>
                     <span class="text">Message</span>
                 </a>
             </li>
             <li>
-            <a href="{{ route('admin.rabuser') }}">
-                <i class='bx bxs-message-dots'></i>
-                <span class="text">RAB User</span>
+                <a href="{{ route('admin.rabuser') }}">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">RAB User</span>
                 </a>
             </li>
             <li>
-            <a href="{{ route('admin.agronomy') }}">
-                <i class='bx bxs-message-dots'></i>
-                <span class="text">Agronomy Advice</span>
+                <a href="{{ route('admin.agronomy') }}">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">Agronomy Advice</span>
                 </a>
             </li>
             <li>
-            <a href="{{ route('admin.team') }}">
-                <i class='bx bxs-group'></i>
-                <span class="text">Team</span>
+                <a href="{{ route('admin.team') }}">
+                    <i class='bx bxs-group'></i>
+                    <span class="text">Team</span>
                 </a>
             </li>
         </ul>
@@ -114,55 +114,70 @@
 
         <!-- MAIN -->
         <main>
-    <div class="head-title">
-               <!-- Table containing advice data -->
-               <table class="advice-table">
-            <thead>
-                <tr>
-                    <th>District</th>
-                    <th>Category</th>
-                    <th>Plant Name</th>
-                    <th>File/Video/Document</th>
-                    <th>Additional Information</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Sample Data -->
-                <tr>
-                    <td>Kigali</td>
-                    <td>Fertilization</td>
-                    <td>Tomato</td>
-                    <td><a href="#" target="_blank">File Link</a></td>
-                    <td>Use organic fertilizer for better results.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Musanze</td>
-                    <td>Pest Control</td>
-                    <td>Maize</td>
-                    <td><a href="#" target="_blank">Video Link</a></td>
-                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Musanze</td>
-                    <td>Pest Control</td>
-                    <td>Maize</td>
-                    <td><a href="#" target="_blank">Video Link</a></td>
-                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                </tr>
-               
-            </tbody>
-        </table>
-    </div>
-        
-    </div>
+            <div class="head-title">
+                <!-- Table containing advice data -->
+                <table class="advice-table">
+                    <thead>
+                        <tr>
+                            <th>District</th>
+                            <th>Category</th>
+                            <th>Plant Name</th>
+                            <th>File/Video/Document</th>
+                            <th>Additional Information</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample Data -->
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Fertilization</td>
+                            <td>Tomato</td>
+                            <td>
+                                <video width="180" height="100" controls style="max-width: 100%;">
+                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </td>
+                            <td>Use organic fertilizer for better results.</td>
+                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Fertilization</td>
+                            <td>Tomato</td>
+                            <td>
+                                <video width="180" height="100" controls style="max-width: 100%;">
+                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </td>
+                            <td>Use organic fertilizer for better results.</td>
+                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Fertilization</td>
+                            <td>Tomato</td>
+                            <td>
+                                <video width="180" height="100" controls style="max-width: 100%;">
+                                    <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </td>
+                            <td>Use organic fertilizer for better results.</td>
+                            <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                        </tr>
 
-</main>
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
+
+        </main>
     </section>
-   
+
 
 </body>
 

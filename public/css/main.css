@@ -41,6 +41,69 @@
 }
 
 
+/* css style for user alltable  */
+
+.user-table {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Action Buttons Styles */
+td a, td button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+td a {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+td a:hover {
+    background-color: #0056b3;
+}
+
+td form {
+    display: inline-block;
+}
+
+td button {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #c82333;
+}
 /* Responsive styles for the table */
 @media screen and (max-width: 768px) {
     .advice-table {
@@ -50,5 +113,16 @@
     .advice-table th, .advice-table td {
         padding: 10px;
     }
+    /* css style for user alltable  */
+    
 }
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
 
+    td a, td button {
+        padding: 6px 10px;
+    }
+}

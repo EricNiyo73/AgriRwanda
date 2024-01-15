@@ -1,124 +1,3 @@
-/* 
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-<<<<<<< HEAD
-    /* background-color: #FFFFFF;
-    color: #26461B; */
-    background-color: #7de65a;
-    color: #FFFFFF;
-=======
-    background-color: #7de65a;
-    color: #26461B;
->>>>>>> view
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-}
-
-.links a {
-    color: #26461B;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.links a:hover {
-    color: #329D23;
-}
-
-.connect a {
-    color: #26461B;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.connect a:hover {
-    background-color: #329D23;
-    color: white;
-    border-radius: 3px;
-    padding: 8px 15px;
-}
-
-
-.menu-btn {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-}
-
-.bar {
-    height: 3px;
-    width: 30px;
-    background-color: #26461B;
-    transition: 0.4s;
-}
-
-@media (max-width: 768px) {
-    .container-fluid {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .menu-btn {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: #7de65a;
-        position: absolute;
-        top: 0px; 
-        left: 0;
-        z-index: 1;
-    }
-    .container-fluid.show-links .links {
-        display: flex;
-    }
-    .links.show {
-        display: flex;
-    }
-
-    .connect {
-        margin-top: 1rem;
-        max-height: 200px;
-    }
-} */
 
 body {
     margin: 0;
@@ -201,6 +80,10 @@ body {
 @media (max-width: 768px) {
     .menu-btn {
         display: flex;
+        cursor: pointer;
+    }
+    .navbar {
+        position: relative;
     }
 
     .links {
@@ -211,8 +94,12 @@ body {
         background-color: #7de65a;
         position: absolute;
         top: 60px;
-        left: 0;
-        z-index: 1;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .links.show {
@@ -221,9 +108,16 @@ body {
 
     .links a {
         margin: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
     }
 
     .connect {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
+        margin: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
     }
 }

@@ -27,7 +27,7 @@
                 <li><a href="/">About</a></li>
                 <li><a href="/">Services</a></li>
                 <li><a href="/">Contact</a></li>
-                <li><a href="/">Project</a></li>
+               
             </ul>
         </div>
         <div class="quicklink_footer">
@@ -48,7 +48,7 @@
             <div class="news-content">
 
                 <p>Beef retail prices hit a record</p>
-                <span class="news-date">18 Aug 2018</span>
+                <span class="news-date">15 january 2024</span>
             </div>
         </div>
         
@@ -60,7 +60,7 @@
             <div class="news-content">
 
                 <p>Beef retail prices hit a record</p>
-                <span class="news-date">18 Aug 2018</span>
+                <span class="news-date">15 january 2024</span>
             </div>
         </div>
         

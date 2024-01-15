@@ -27,7 +27,6 @@
                 <a href="#" onclick="smoothScroll('#home')">Home</a>
                 <a href="#" onclick="smoothScroll('#about')">About</a>
                 <a href="#" onclick="smoothScroll('#service')">Service</a>
-                <a href="#" onclick="smoothScroll('#farmingPractice')">Farming Practice</a>
                 <a href="#" onclick="smoothScroll('#ourProduct')">Our Product</a>
                 <a href="#" onclick="smoothScroll('#contact')">Contact</a>
                 <div class="connect">
@@ -39,17 +38,17 @@
     </nav>
 
     <script>
-        function toggleMenu() {
-            const links = document.querySelector('.links');
-            links.classList.toggle('show');
-        }
+    function toggleMenu() {
+        const links = document.querySelector('.links');
+        links.classList.toggle('show');
+    }
 
-        function smoothScroll(target) {
-            document.querySelector(target).scrollIntoView({
-                behavior: 'smooth'
-            });
-            toggleMenu();
-        }
+    function smoothScroll(target) {
+        document.querySelector(target).scrollIntoView({
+            behavior: 'smooth'
+        });
+        toggleMenu();
+    }
     </script>
 
 </body>

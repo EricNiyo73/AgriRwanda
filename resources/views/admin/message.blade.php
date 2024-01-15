@@ -9,12 +9,56 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
     <link rel="stylesheet" href="{{ asset('css/adnin.css') }}">
-
-
     <title>Agri_unityRwanda</title>
 </head>
 
 <body>
+
+<style>
+    /* Add this inline style in your HTML or in a separate style tag */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .message {
+        max-width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        background-color: #fff;
+    }
+
+    .message:hover {
+        transform: translateY(-5px);
+    }
+
+    .message-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .message-body {
+        padding: 15px;
+    }
+
+    .message-item {
+        margin-bottom: 10px;
+    }
+
+    .message-item strong {
+        color: #007bff;
+    }
+</style>
+
+
 
 
     <!-- SIDEBAR -->
@@ -69,12 +113,12 @@
             </li>
         </ul>
         <ul class="side-menu">
-            <li>
+            <!-- <li>
                 <a href="#">
                 <a href="{{ route('admin.settings') }}">
                     <span class="text">Settings</span>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="/" class="logout">
                     <i class='bx bxs-log-out-circle'></i>
@@ -114,12 +158,26 @@
 
         <!-- MAIN -->
         <main>
-            <div class="head-title">
-
-                <!-- message -->
-                <p>message written here </p>
+    <div class="head-title">
+        <!-- Messages -->
+        <div class="message">
+            <div class="message-item">
+                <strong>Name:</strong> John Doe<br>
+                <strong>Telephone:</strong> +250 08967564<br>
+                <strong>Email:</strong> john.doe@example.com<br>
+                <strong>Message:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna et odio gravida cursus. Nullam vel ultrices justo. Integer lacinia sem sit amet euismod blandit.
             </div>
-        </main>
+            <div class="message-item">
+                <strong>Name:</strong> John Doe<br>
+                <strong>Telephone:</strong> +250 08967564<br>
+                <strong>Email:</strong> john.doe@example.com<br>
+                <strong>Message:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna et odio gravida cursus. Nullam vel ultrices justo. Integer lacinia sem sit amet euismod blandit.
+            </div>
+            <!-- Add more message items as needed -->
+        </div>
+    </div>
+</main>
+
         <!-- MAIN -->
     </section>
     <!-- CONTENT -->
