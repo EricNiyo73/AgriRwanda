@@ -15,50 +15,46 @@
 <body>
 
 <style>
-    /* Add this inline style in your HTML or in a separate style tag */
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
+        /* Add this inline style in your HTML or in a separate style tag */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto; 
+        }
 
-    .message {
-        max-width: 300px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-        background-color: #fff;
-    }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-    .message:hover {
-        transform: translateY(-5px);
-    }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
 
-    .message-header {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-    }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
 
-    .message-body {
-        padding: 15px;
-    }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
 
-    .message-item {
-        margin-bottom: 10px;
-    }
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px; 
+            }
 
-    .message-item strong {
-        color: #007bff;
-    }
-</style>
-
-
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
 
 
     <!-- SIDEBAR -->
@@ -160,19 +156,32 @@
         <main>
     <div class="head-title">
         <!-- Messages -->
-        <div class="message">
-            <div class="message-item">
-                <strong>Name:</strong> John Doe<br>
-                <strong>Telephone:</strong> +250 08967564<br>
-                <strong>Email:</strong> john.doe@example.com<br>
-                <strong>Message:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna et odio gravida cursus. Nullam vel ultrices justo. Integer lacinia sem sit amet euismod blandit.
-            </div>
-            <div class="message-item">
-                <strong>Name:</strong> John Doe<br>
-                <strong>Telephone:</strong> +250 08967564<br>
-                <strong>Email:</strong> john.doe@example.com<br>
-                <strong>Message:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna et odio gravida cursus. Nullam vel ultrices justo. Integer lacinia sem sit amet euismod blandit.
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Telephone</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Replace this static data with the dynamic data you'll fetch later -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>(123) 456-7890</td>
+                    <td>john@example.com</td>
+                    <td>This is a sample message. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>(987) 654-3210</td>
+                    <td>jane@example.com</td>
+                    <td>Another sample message. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
             <!-- Add more message items as needed -->
         </div>
     </div>
