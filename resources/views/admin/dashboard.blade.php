@@ -106,7 +106,7 @@
                 <span class="num">8</span>
             </a>
             <a href="#" class="profile">
-                <img src="{{ asset('images/banana.jpg') }}" />
+                <img src="{{ asset('images/modern.jpg') }}" />
             </a>
         </nav>
         <!-- NAVBAR -->
@@ -183,32 +183,32 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>amateke</p>
+                                    <img src="{{ asset('images/modern.jpg') }}" />
+                                    <p>Alain Nig</p>
                                 </td>
                                 <td>fresh vegatale</td>
                                 <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>amateke</p>
+                                    <img src="{{ asset('images/modern.jpg') }}" />
+                                    <p>Alain Nig</p>
                                 </td>
                                 <td>fresh vegatale</td>
                                 <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>amateke</p>
+                                    <img src="{{ asset('images/modern.jpg') }}" />
+                                    <p>Alain Nig</p>
                                 </td>
                                 <td>fresh vegatale</td>
                                 <td>20KG</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>amateke</p>
+                                    <img src="{{ asset('images/modern.jpg') }}" />
+                                    <p>Alain Nig</p>
                                 </td>
                                 <td>Fresh Vegatale</td>
                                 <td>20KG</td>

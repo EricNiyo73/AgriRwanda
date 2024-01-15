@@ -44,7 +44,7 @@ Route::put('/farmerform/update/{product}', [FarmerController::class, 'updateProd
     Route::get('/advice/filter', [AgronomyController::class, 'filteringAll'])->name('agronomy.filter');
 
 
-// Route::group(['middleware' => ['auth', 'admin']], function () {
+// Route::group(['middleware' => ['auth', 'Admin']], function () {
     Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin/all-users', [AdminDashboardController::class, 'allUsers'])->name('admin.allUsers');
     Route::get('/admin/Productlist', [AdminDashboardController::class, 'Productlist'])->name('admin.Productlist');
