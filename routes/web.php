@@ -34,17 +34,22 @@ Route::delete('/destroyUser/{user}', [UserController::class, 'destroyUser'])->na
     Route::get('/farmerform/update/{productId}', [FarmerController::class, 'showUpdateForm'])->name('farmerform.update');
     Route::post('/farmerform/update/{productId}', [FarmerController::class, 'updateProduct']);
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::delete('/farmerform/delete/{product}', [FarmerController::class, 'destroyProduct'])->name('product.deleting');
+    Route::get('/farmerform/getupdate/{product}', [FarmerController::class, 'showUpdateForm'])->name('farmer.editing');
+    Route::put('/farmerform/update/{product}', [FarmerController::class, 'updateProduct'])->name('product.updateProduct');
 // });
-Route::delete('/farmerform/delete/{product}', [FarmerController::class, 'destroyProduct'])->name('product.deleting');
-Route::get('/farmerform/getupdate/{product}', [FarmerController::class, 'showUpdateForm'])->name('farmer.editing');
-Route::put('/farmerform/update/{product}', [FarmerController::class, 'updateProduct'])->name('product.updateProduct');
+
+// Route::group(['middleware' => 'auth'], function () {
 
    Route::get('/agronomyform', [AgronomyController::class, 'AgronomyForm'])->name('auth.agronomyform');
     Route::post('/agronomyform/submit', [AgronomyController::class, 'submitAgriForm'])->name('auth.submitAgriForm');
     Route::get('/advice/filter', [AgronomyController::class, 'filteringAll'])->name('agronomy.filter');
+    Route::delete('/advice/delete/{advice}', [AgronomyController::class, 'destroyadvice'])->name('advice.deleting');
+// });
 
 
-// Route::group(['middleware' => ['auth', 'Admin']], function () {
+// Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin/all-users', [AdminDashboardController::class, 'allUsers'])->name('admin.allUsers');
     Route::get('/admin/Productlist', [AdminDashboardController::class, 'Productlist'])->name('admin.Productlist');

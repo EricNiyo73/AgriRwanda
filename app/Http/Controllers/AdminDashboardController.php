@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\users;
 use App\Models\farmers;
+use App\Models\agronomies;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 
@@ -45,7 +46,14 @@ class AdminDashboardController extends Controller
     }
     public function agronomy()
     {
-        return view('admin.agronomy');
+           $agronomy = agronomies::all();
+        foreach ($agronomy as $agro) {
+            $carbonDate = Carbon::parse($agro->created_at);
+            $agro->formatted_created_at = $carbonDate->format('j F Y');
+            $agro->short_description = Str::limit($agro->additional_info, 10);
+            $agro->short_desc = Str::limit($agro->additional_info, 50);
+        }
+        return view('admin.agronomy',compact('agronomy'));
     }
     public function team()
     {

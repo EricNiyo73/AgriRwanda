@@ -153,3 +153,10 @@ button {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #4caf50;
+    background-color: #4caf50;
+    color: white;
+}

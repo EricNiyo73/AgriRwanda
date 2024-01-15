@@ -17,7 +17,7 @@
                 <div class="footerDiv flex">
                     <span class='text'> Have any account</span>
                     <a href="{{ url('/login') }}">
-                        <button class='btn'>Login</button>
+                        <button class='btn'>Injira</button>
                     </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     </span>
 
                     <div class="inputDiv">
-                        <label for="Username">Full Names</label>
+                        <label for="Username">Amazina Yombi</label>
                         <div class="input">
                             <span class='icon'>&#x1F482;</span>
                             <input type='text' id='fullname' name="fullname" placeholder='Enter Full names' />
@@ -67,12 +67,12 @@
                     </div>
 
                     <button type='submit' class='btn flex'>
-                        <span>Sign up</span>
+                        <span>Iyandikishe </span>
                         <span class='icon'>&#x2192;</span>
                     </button>
 
                     <span class='forgotPassword'>
-                        Forget your password? <a href="">Click Here</a>
+                        Wiabagiwe ijambo banga? <a href="">Kanda Hano</a>
                     </span>
                 </form>
             </div>

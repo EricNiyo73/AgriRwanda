@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\farmers;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Session;
 
 class FarmerController extends Controller
 {
@@ -19,7 +20,7 @@ class FarmerController extends Controller
             $product->short_desc = Str::limit($product->product_description, 50);
             
         }
-
+        
         return view('auth.farmerform', compact('products'));
     }
     public function submitFarmerForm(Request $request){
@@ -45,6 +46,7 @@ class FarmerController extends Controller
                 $input['image'] = "$destinationPath/$productImage";
             }
         farmers::create($input);
+        Session::flash('success', 'Urakoze kumenyekanisha umusaruro wawe');
         return back();
     } catch (\Exception $e) {
         return redirect()->back()->withInput()->withErrors(['error' => $e->getMessage()]);

@@ -137,7 +137,7 @@
                     <i class='bx bxs-calendar-check'></i>
                     <span class="text">
                         <h3>{{ $registeredUsers }}</h3>
-                        <p>Active Members</p>
+                        <p>Active Member</p>
                     </span>
                 </li>
                 <li>

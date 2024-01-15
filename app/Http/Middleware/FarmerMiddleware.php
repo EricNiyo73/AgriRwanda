@@ -4,12 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use App\Models\users;
-class AdminMiddleware
+
+class FarmerMiddleware
 {
-
-
-
     /**
      * Handle an incoming request.
      *
@@ -19,10 +16,11 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if (auth()->check() && auth()->users()->role == 'admin') {
+
+        if (auth()->check() && auth()->users()->role === 'farmer') {
             return $next($request);
         }
-       return redirect('/')->with('error', 'You do not have permission to access this page.');
-    }
+        return redirect('/')->with('error', 'You do not have permission to access this page.');
     
+    }
 }
