@@ -129,31 +129,22 @@
             </thead>
             <tbody>
                 <!-- Sample Data -->
+                @foreach ($agronomy as $agro)
                 <tr>
-                    <td>Kigali</td>
-                    <td>Fertilization</td>
-                    <td>Tomato</td>
+                    <td>{{$agro->district}}</td>
+                    <td>{{$agro->category}}</td>
+                    <td>{{$agro->plant_name}}</td>
                     <td><a href="#" target="_blank">File Link</a></td>
-                    <td>Use organic fertilizer for better results.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                    <td>{{$agro->short_desc}}</td>
+                    <td>
+                
+                 <form action="{{route('advice.deleting',$agro->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="delete-btn" onclick="return confirm('Are you sure you want to delete this Product?')">Delete</button>
+                        </form></td>
                 </tr>
-                <tr>
-                    <td>Musanze</td>
-                    <td>Pest Control</td>
-                    <td>Maize</td>
-                    <td><a href="#" target="_blank">Video Link</a></td>
-                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Musanze</td>
-                    <td>Pest Control</td>
-                    <td>Maize</td>
-                    <td><a href="#" target="_blank">Video Link</a></td>
-                    <td>Apply pesticide as soon as you spot pests on maize plants.</td>
-                    <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
-                </tr>
-               
+               @endforeach
             </tbody>
         </table>
     </div>

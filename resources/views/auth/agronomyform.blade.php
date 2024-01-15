@@ -39,10 +39,11 @@
         
         <label for="category">Select Category:</label>
         <select name="category" id="category">
-        <option value="ibikigwa">Ibihigwa by'ibinyamake</option>
-                    <option value="Diary and Other (Fish)">Diary and Other (Fish)</option>
-                    <option value="Fresh Vegetables">Fresh Vegetables</option>
-                    <option value="Organic Products">Organic Products</option>
+        <option selected>Hitamo</option>
+                    <option value="Ibihigwa by'ibinyampeke">Ibihigwa by'ibinyampeke</option>
+                    <option value="Imbuto">Imbuto</option>
+                    <option value="Imgoga">Imboga</option>
+                    <option value="Ibihingwa Ngandurarugo">Ibihingwa Ngangurabukungu</option>
            
         </select>
         <label for="plant_name">Plant Name:</label>

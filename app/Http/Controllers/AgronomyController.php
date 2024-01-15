@@ -46,6 +46,8 @@ class AgronomyController extends Controller
         }
         agronomies::create($input);
         return back();
+        Session::flash('success', 'Advice posted successfully.');
+
     } catch (\Exception $e) {
         return redirect()->back()->withInput()->withErrors(['error' => $e->getMessage()]);
     }
@@ -99,4 +101,10 @@ public function filteringAll(Request $request)
         // Return the filtered results to the view
         return view('pages.home', compact('products', 'agronomies'));
     }
+     public function destroyAdvice($id)
+     {
+    $advice = agronomies::find($id);
+    $advice->delete();
+    return redirect()->back()->with('success', 'advice deleted successfully.');
+    } 
 }

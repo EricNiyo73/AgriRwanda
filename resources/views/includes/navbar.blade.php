@@ -24,7 +24,7 @@
             </div>
 
             <div class="links">
-                <a href="#" onclick="smoothScroll('#home')">Ahabanza</a>
+                <a href="/" onclick="smoothScroll('#home')">Ahabanza</a>
                 <a href="#" onclick="smoothScroll('#about')">Ibitwerekeyeho</a>
                 <a href="#" onclick="smoothScroll('#service')">Service</a>
                 <a href="#" onclick="smoothScroll('#ourProduct')">Our Product</a>
