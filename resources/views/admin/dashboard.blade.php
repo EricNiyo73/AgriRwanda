@@ -175,8 +175,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="{{ asset('images/banana.jpg') }}" />
-                                    <p>hhhh</p>
+                                    <img src="{{ asset('images/karoti.jpg') }}" />
+                                    <p>KAROTI</p>
                                 </td>
                                 <td>fresh vegatale</td>
                                 <td>20KG</td>
